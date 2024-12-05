@@ -1,0 +1,15 @@
+{
+  "functions": {
+    "api/**/*.py": {
+      "maxDuration": 30,
+      "memory": 1024,
+      "excludeFiles": "{.next,*.cache,node_modules,public,app}/**"
+    }
+  },
+  "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "/api/index.py"
+      }
+    ]
+}
